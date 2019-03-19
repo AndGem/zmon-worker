@@ -116,7 +116,7 @@ class RedisWrapper(object):
         return self.__con.zcard(key)
 
     def zrange(self, key, start, end, desc=False, withscores=False, score_cast_func=float):
-        return self.__con.zrange(key, start, end, desc, witschores, score_cast_func)
+        return self.__con.zrange(key, start, end, desc, withscores, score_cast_func)
 
     def statistics(self):
         '''
